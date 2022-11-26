@@ -1,14 +1,16 @@
 cakeangle=360
 N=eval(input("Enter Number of cuts: "))
+# First case
 if(cakeangle%N==0):
     print("YES the cake will cut in equal pieces of size",N)
 else:
     print("NO the cake will not cut in equal pieces of size",N)
+#Second case
 if(N>cakeangle): #Only when N is greater tha cake angle cake can't be cut into pieces
     print("NO the cake will not cut in piece of any size",N)
 else:
     print("YES the cake will cut in piece of any size",N)
-n=1 # start subratcrting the cake
+n=1 # Third case
 for i in range(N):
     cakeangle-=n
     n+=1
